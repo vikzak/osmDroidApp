@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_my_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:alpha="0.4"
+        android:clickable="true"
+        android:longClickable="true"
+        android:soundEffectsEnabled="true"
+        android:src="@drawable/ic_baseline_my_location_24"
+        app:backgroundTint="@color/white"
+        app:borderWidth="20dp"
+        app:elevation="20dp"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="#FDD835"
+        tools:ignore="ContentDescription,HardcodedText"
+        android:contentDescription="@string/gps_my_location_button" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_my_event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/red"
+        android:backgroundTintMode="add"
+        android:clickable="true"
+        android:contentDescription="@string/gps_my_location_button"
+        android:longClickable="true"
+        android:soundEffectsEnabled="true"
+        android:src="@drawable/ic_baseline_medical_services_24"
+        android:tint="@color/white"
+        app:backgroundTint="@color/white"
+        app:borderWidth="1dp"
+        app:elevation="20dp"
+        app:fabSize="auto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#FFB300"
+        tools:ignore="ContentDescription,HardcodedText" />
+
+    <Switch
+        android:id="@+id/switch_lock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lock"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="10dp"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
