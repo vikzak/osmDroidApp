@@ -6,6 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment">
 
+    <org.osmdroid.views.MapView
+        android:id="@+id/mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tilesource="Mapnik" />
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab_my_location"
         android:layout_width="wrap_content"
@@ -48,14 +54,17 @@
         app:rippleColor="#FFB300"
         tools:ignore="ContentDescription,HardcodedText" />
 
-    <Switch
+    <com.google.android.material.switchmaterial.SwitchMaterial
         android:id="@+id/switch_lock"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="lock"
+        android:layout_margin="10dp"
+        android:showText="false"
+        android:text="unlock"
+        android:textColor="#B3000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="10dp"
+        app:useMaterialThemeColors="false"
         tools:ignore="UseSwitchCompatOrMaterialXml" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
